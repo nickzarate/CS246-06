@@ -9,8 +9,44 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.nickzarate.cs246_06.MainActivity">
 
-    <TextView
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:id="@+id/progressBar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="200px"
+        android:id="@+id/listView"
+        android:layout_below="@+id/progressBar"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:id="@+id/create"
+        android:layout_below="@+id/listView"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load"
+        android:id="@+id/load"
+        android:layout_below="@+id/listView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:id="@+id/clear"
+        android:layout_below="@+id/listView"
+        android:layout_alignParentEnd="true" />
+
 </RelativeLayout>
