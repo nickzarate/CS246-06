@@ -37,15 +37,6 @@ public class MainActivity extends AppCompatActivity {
 
     // Called when "Load" button is clicked
     public void load() {
-        Context.getFilesDir("numbers.txt", 0);
-        FileInputStream fis = Context.openFileInput("hello.txt", Context.MODE_PRIVATE);
-        InputStreamReader isr = new InputStreamReader(fis);
-        BufferedReader bufferedReader = new BufferedReader(isr);
-        StringBuilder sb = new StringBuilder();
-        String line;
-        while ((line = bufferedReader.readLine()) != null) {
-            sb.append(line);
-        }
     }
 
     // Called when "Clear" button is clicked
